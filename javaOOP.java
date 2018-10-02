@@ -4,13 +4,11 @@ public class Sequence extends Element
     protected Sequence next;
     
     public Sequence(){
-        
         element = null;
         next = null;
     }
 
-    public Sequence(Element element, Sequence next)
-    {
+    public Sequence(Element element, Sequence next){
         this.element=element;
         this.next=next;
     }
@@ -28,8 +26,7 @@ public class Sequence extends Element
         next = n;
     }
     // Prints sequence
-    public void Print()
-    {
+    public void Print(){
         // print sequence
         System.out.print("[ ");
         //print current element
@@ -132,8 +129,6 @@ public class Sequence extends Element
                 temp = ptr.next;
                 i++;
             }
-            
-           
             ptr.next = temp.next;
         };
 
@@ -480,9 +475,7 @@ class MapIterator extends SequenceIterator {
         
         Pair getter= (Pair)iterator.Get();
         return getter;
-
     }
-
     
 }
 
@@ -559,7 +552,4 @@ class Map extends Sequence {
         
         return ending;
     }
-
-
-
 }
